@@ -1,0 +1,82 @@
+.btn_bar {
+  height: 18vh;
+  width: 90vw;
+  margin: 0 auto;
+  background: rgb(46, 45, 59);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(28, 26, 36, 0.514) 1px 3px 2px,
+    rgba(56, 58, 83, 0.479) 0px -12px 30px, rgba(74, 76, 99, 0.12) 0px 4px 6px,
+    rgba(76, 73, 105, 0.17) 0px 12px 13px, rgba(57, 62, 78, 0.671) 0px -3px 5px;
+}
+
+.meta,
+.google,
+.linkedin,
+.slack {
+  height: 10vh;
+  width: 15vw;
+  /* background: rgb(68, 61, 61); */
+  background: rgb(35, 34, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+
+
+    .btn_bar {
+        height: 19vh;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 10px;
+        border: 10px solid rgb(46, 45, 59);
+    }
+
+    .meta,
+    .google,
+    .linkedin,
+    .slack {
+        height: 45%;
+        width: 45%;
+        background: rgb(68, 61, 61);
+        background: rgb(35, 34, 43);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    .meta {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+    }
+
+    .google {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+
+    .linkedin {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+    }
+
+    .slack {
+        position: absolute;
+        bottom: 1px;
+        left: 1px;
+    }
+
+}
